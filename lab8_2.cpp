@@ -13,6 +13,7 @@ int main()
     cout << name << ": ";
     int id;
     cin >> id;
+    cin.ignore();
     string str = to_string(id);
     string first_two_digits = str.substr(0, 2);
     int gear = std::stoi(first_two_digits) - 12;
@@ -28,8 +29,10 @@ int main()
     getline(cin,date);
     cout << "Fahsai: " << date << "....that is OK!!! I'm looking forward to watching " << mov << " with you." << endl;
     cout << name << ": ";
-    string c;
+    string c ;
+    string chat;
+    chat = ". Bye Bye \\(^ ^)/";
     getline(cin,c);
-    cout << "Fahsai: 555+ see you " << date << ". Bye Bye \(^ ^)/";
+    cout << "Fahsai: 555+ see you " << date << chat;
     return 0;
 }
